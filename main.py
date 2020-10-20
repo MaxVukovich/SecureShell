@@ -11,6 +11,9 @@ def home():
     # function use Flask import (Jinga) to render an HTML template
     return render_template("home.html")
 
+@app.route('/links/')
+def links_rooute():
+    return render_template("links.html")
 
 if __name__ == "__main__":
     # runs the application on the repl development server

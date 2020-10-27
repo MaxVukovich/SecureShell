@@ -1,5 +1,9 @@
-#luca pinto
-#tanmay marwah
+#Luca Pinto
+#Noobaka Irfan
+#Tanmay Marwah
+#Andrew Crisostomo
+#Cody Peng
+#Max Vukovich
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
 

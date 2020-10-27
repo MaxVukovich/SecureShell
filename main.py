@@ -1,4 +1,4 @@
-#luca pinto
+#max vukovich
 #tanmay marwah
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
@@ -18,7 +18,7 @@ def links_rooute():
 
 @app.route('/flask/')
 def flask():
-    return render_template("flask.html")2
+    return render_template("flask.html")
 
 if __name__ == "__main__":
     # runs the application on the repl development server

@@ -16,7 +16,7 @@ def home():
     return render_template("home.html")
 
 @app.route('/links/')
-def links_rooute():
+def links_route():
     return render_template("links.html")
 
 @app.route('/flask/')

@@ -28,41 +28,76 @@
 <p style="color:white;text-align:center;font-family:verdana">Andrew Crisostomo | Ahmad Nasim | Cody Peng | Luca Pinto | Mileta Vukovich | Tanmay Marwah</p>
 
 
-
 <div class="product" style="margin-top: 5%;">
     <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 2%;">
 
-        <div class="col-8">
-            <h1 style="color:Red;">Flask Series Project</h1>
+        <div class="dropdown">
+            <button class="dropbtn">SSH Shell Login</button>
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/document/d/1oDSYDH4TLnrq1seO0PEO6nYHXbi3XMscEtPeNIbfMIk/edit?usp=shari">Project Portfolio</a>
+                <div class="dropdown-divider"></div>
+                <a href="https://repl.it/@TMarwah/p2-TanmayA#main.py">Repl</a>
+                <div class="dropdown-divider"></div>
+                <a href="http://nighthawkcoders.cf/courses/python/#flask-padlet">Resources</a>
+                <div class="dropdown-divider"></div>
+                <a href="https://docs.google.com/document/d/1f-aT5hgvu_h0xv1gSOvz8Ls-oXVEXlLowsxZdkN6YZw/edit?usp=sharing">Journal(Mileta,Cody,Luca)</a>
+                <div class="dropdown-divider"></div>
+                <a href="https://docs.google.com/document/d/1-UAGwPRwrVyJvLPtaW597b4U8GfcQATbWQZXWXvoxgo/edit?usp=sharing">Journal(Andrew,Ahmad,
+                    Tanmay)</a>
+
+            </div>
         </div>
 
     </div>
 
-    <div class="container" style="padding-left: 0%;">
-        <div class="item">
-            <a href="https://docs.google.com/document/d/1oDSYDH4TLnrq1seO0PEO6nYHXbi3XMscEtPeNIbfMIk/edit?usp=sharing" class="btn">Project Plan</a>
-        </div>
-
-        <div class="item">
-            <a href="https://repl.it/@TMarwah/p2-TanmayA#main.py" class="btn">Repl</a>
-        </div>
-
-        <div class="item">
-            <a href="http://nighthawkcoders.cf/courses/python/#flask-padlet" class="btn">Resources</a>
-        </div>
-        <div class="item">
-            <a href="https://docs.google.com/document/d/1f-aT5hgvu_h0xv1gSOvz8Ls-oXVEXlLowsxZdkN6YZw/edit?usp=sharing" class="btn">Journal(Mileta,Cody,Luca)</a>
-        </div>
-        <div class="item">
-            <a href="https://docs.google.com/document/d/1-UAGwPRwrVyJvLPtaW597b4U8GfcQATbWQZXWXvoxgo/edit?usp=sharing" class="btn">Journal(Andrew,Ahmad,
-                Tanmay)
-            </a>
-        </div>
-
-    </div>
 
 </div>
-</body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+.dropbtn {
+  background-color: gray;
+  color: white;
+  padding: 16px;
+  font-size: 40px;
+  border: none;
+  left: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: gray;}
+</style>
+</head>
+
+<body>
+
+<div class="product" style="margin-top: 5%;">
+    <ddiv class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 2%;">
 
 <script src="https://threejs.org/build/three.js"></script>
 <script src="{{ url_for('static', filename='vanta.trunk.min.js') }}"></script>

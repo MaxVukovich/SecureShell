@@ -11,7 +11,7 @@
 ## So Far
 ```
 - We have created multiple pages for each project. These pages are accessible through the menu on the top of the site
-- Each Project page contains links for repl, project plan and journal. Hovering over the project name will give you a drop down with these links.
+- Each project page contains links for repl, project plan and journal. Hover over the project name to access links.
 - Home screen animation done through vanta js.
 ```
 

@@ -26,7 +26,7 @@ def flask():
     return render_template("flask.html")
 
 @app.route('/login/')
-def flask():
+def login():
     return render_template("login.html")
 
 if __name__ == "__main__":

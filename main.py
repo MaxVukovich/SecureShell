@@ -24,6 +24,10 @@ def links_route():
 def flask():
     return render_template("flask.html")
 
+@app.route('/login/')
+def flask():
+    return render_template("login.html")
+
 if __name__ == "__main__":
     # runs the application on the repl development server
     app.run(debug=True)

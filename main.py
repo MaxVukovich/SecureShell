@@ -6,7 +6,7 @@
 #Max Vukovich
 #test
 # https://flask.palletsprojects.com/en/1.1.x/api/
-from flask import Flask, render_template
+from flask import Flask, render_template , redirect, url_for, request
 
 # create a Flask instance
 app = Flask(__name__)
@@ -25,9 +25,18 @@ def links_route():
 def flask():
     return render_template("flask.html")
 
-@app.route('/login/')
-def login():
-    return render_template("login.html")
+@app.route('/embedshell/')
+def flask():
+    return render_template("embedshell.html")
+
+@app.route('/login/', methods=['POST'])
+def do_admin_login():
+    if request.form['password'] == 'password' and request.form['username'] == 'admin':
+        session['logged_in'] = True
+    else:
+        flash('wrong password!')
+    return home()
+
 
 if __name__ == "__main__":
     # runs the application on the repl development server

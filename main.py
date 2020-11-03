@@ -6,16 +6,27 @@
 #Max Vukovich
 #test
 # https://flask.palletsprojects.com/en/1.1.x/api/
-from flask import Flask, render_template , redirect, url_for, request
+from flask import Flask, flash, redirect, render_template, request, session, abort
+import os
 
 # create a Flask instance
 app = Flask(__name__)
 
 # connects default URL of server to a python function
 @app.route('/')
-def home():
-    # function use Flask import (Jinga) to render an HTML template
-    return render_template("home.html")
+def index():
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        return render_template('home.html')
+
+@app.route('/login', methods=['POST', 'GET'])
+def do_admin_login():
+    if request.form['password'] == 'password' and request.form['username'] == 'admin':
+        session['logged_in'] = True
+    else:
+        flash('Wrong password!')
+    return index()
 
 @app.route('/links/')
 def links_route():
@@ -29,15 +40,10 @@ def flask():
 def embed():
     return render_template("embedshell.html")
 
-@app.route('/login/', methods=['POST'])
-def do_admin_login():
-    if request.form['password'] == 'password' and request.form['username'] == 'admin':
-        session['logged_in'] = True
-    else:
-        flash('wrong password!')
-    return home()
+
 
 
 if __name__ == "__main__":
     # runs the application on the repl development server
+    app.secret_key = os.urandom(12)
     app.run(debug=True)

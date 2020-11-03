@@ -26,7 +26,7 @@ def flask():
     return render_template("flask.html")
 
 @app.route('/embedshell/')
-def flask():
+def embed():
     return render_template("embedshell.html")
 
 @app.route('/login/', methods=['POST'])

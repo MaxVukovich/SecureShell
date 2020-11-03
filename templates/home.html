@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 
 <head>
@@ -5,10 +6,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <title>SSH Login</title>
+    <style type="text/css">
+        body
+        {
+            padding:0;
+            margin:0;
+            background: #0;
+        }
+        h1
+        {
+            font-size: 5em;
+            margin:0;
+            padding: 0;
+            text-align: center;
+            font-family: 'arial' ;
+            position: absolute;
+            top:  50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">SSH Login Flask Website</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,15 +37,15 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="/links">SSH Shell Login</a>
-            <a class="nav-link" href="/flask">Flask Series Project</a>
+            <a class="nav-link" href="/ssh">SSH Login</a>
+            <a class="nav-link" href="/flask">Flask Project</a>
             <a class="nav-link " href="/embedshell">SSH Login Embed</a>
             <a class="nav-link " href="/login">Login</a>
         </div>
     </div>
 </nav>
 
-<p style="color:white;text-align:center;background-color: black;">Andrew Crisostomo | Ahmad Nasim | Cody Peng | Luca Pinto | Mileta Vukovich | Tanmay Marwah</p>
+<h1>SSH Login</h1>
 
 <div id="vantatrunk"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
@@ -45,9 +66,15 @@
   </script>
 </body>
 
+<p style="color:white;text-align:center;font-family:verdana">Andrew Crisostomo | Ahmad Nasim | Cody Peng | Luca Pinto | Mileta Vukovich | Tanmay Marwah</p>
+
+
+
+
+
 <style>
   .vantatrunk {
-	position: abosolute;
+		position: abosolute;
     display: block;
     min-width: 100%;
     min-height: 100vh;

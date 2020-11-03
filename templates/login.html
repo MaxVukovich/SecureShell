@@ -12,13 +12,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav"">
-                <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="/links">SSH Shell Login</a>
-                <a class="nav-link" href="/flask">Flask Series Project</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <div class="navbar-nav">
+            <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/links">SSH Shell Login</a>
+            <a class="nav-link" href="/flask">Flask Series Project</a>
+            <a class="nav-link " href="/login">Login</a>
 
-            </div>
+        </div>
         </div>
     </nav>
 
@@ -28,28 +28,7 @@
 <body style ="background-color:gray;">
 
 
-<div class="product" style="margin-top: 5%;">
-    <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 2%;">
 
-        <div class="dropdown">
-            <button class="dropbtn">SSH Shell Login</button>
-            <div class="dropdown-content">
-                <a href="https://docs.google.com/document/d/13t2pk-3f1qSdgGQXizjIjrLYIU35mj19pajXCEup9og/edit">Project Portfolio</a>
-                <div class="dropdown-divider"></div>
-                <a href="https://repl.it/@TMarwah/Team3-SSH-Login#main.py">Repl</a>
-                <div class="dropdown-divider"></div>
-                <a href="http://nighthawkcoders.cf/courses/python/#flask-padlet">Resources</a>
-                <div class="dropdown-divider"></div>
-                <a href="https://docs.google.com/document/d/1f-aT5hgvu_h0xv1gSOvz8Ls-oXVEXlLowsxZdkN6YZw/edit?usp=sharing">Journal(Mileta,Cody,Luca)</a>
-                <div class="dropdown-divider"></div>
-                <a href="https://docs.google.com/document/d/1-UAGwPRwrVyJvLPtaW597b4U8GfcQATbWQZXWXvoxgo/edit?usp=sharing">Journal(Andrew,Ahmad,
-                    Tanmay)</a>
-
-            </div>
-        </div>
-
-    </div>
-</div>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -93,8 +72,17 @@
 </head>
 
 <body>
-
-
+<h1 style="color:white;font-family:verdana" >Please Log In</h1>
+<form action="" method="post">
+    <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+    <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+    <input class="btn btn-default" type="submit" value="Login">
+</form>
+{% if error %}
+<p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
 
 </body>
 

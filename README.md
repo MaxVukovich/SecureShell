@@ -4,7 +4,7 @@
 - Clone this repository into IntelliJ or your IDE of choice by copying the HTTPS link
 - Open the project, and run the "Main.py" file
 - Check the python terminal for a link, click the link to open the site
--Put in username and password "admin"and "password"
+- Put in username and password "admin"and "password"
 ```
 
 # Important info

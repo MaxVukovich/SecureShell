@@ -43,4 +43,9 @@ SSH Login Embed (Shows proficiency in embedding)
 - Repl embedded console. Allows access to our prior ssh shell project. 
 ```
 
+# Project Info
+```
+IDE - IntelliJ Community Edition 2020.2.3
+Interpretor - Python 3.8
+```
 

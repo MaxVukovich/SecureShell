@@ -40,6 +40,9 @@ def flask():
 def embed():
     return render_template("embedshell.html")
 
+@app.route('/embedyoutube/')
+def video():
+    return render_template("embedyoutube.html")
 
 
 

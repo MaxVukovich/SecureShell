@@ -52,6 +52,9 @@ def journal1_route():
 def journal2_route():
     return render_template("task.html", data=data.journal2())
 
+@app.route('/backgroundbeat/')
+def music():
+    return render_template("backgroundbeat.mp3")
 
 
 if __name__ == "__main__":

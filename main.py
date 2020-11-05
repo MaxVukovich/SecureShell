@@ -44,6 +44,14 @@ def embed():
 def video():
     return render_template("embedyoutube.html")
 
+@app.route('/project/journal1')
+def journal1_route():
+    return render_template("task.html", data=data.journal1())
+
+@app.route('/project/journal2')
+def journal2_route():
+    return render_template("task.html", data=data.journal2())
+
 
 
 if __name__ == "__main__":

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="style/css" />
+</head>
+
+
+<body>
+
+<p style="color:white;text-align:center;font-family:verdana;background-color:grey">Andrew Crisostomo | Ahmad Nasim | Cody Peng | Luca Pinto | Mileta Vukovich | Tanmay Marwah</p>
+
+<head>
+    <title>PacMan Shell Project | ssh </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body style ="background-color:gray;">
+
+{% block body %}{% endblock %}
+</body>
+
+
+</html>
+
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+.dropbtn {
+  background-color: gray;
+  color: white;
+  padding: 16px;
+  font-size: 40px;
+  border: none;
+  left: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: gray;}
+</style>
+</head>
+
+<body>
+<h1 style="color:white;font-family:verdana" >Please Log In</h1>
+<form action="/login" method="post">
+    <div class="login">
+        <div class="login-screen">
+            <div class="app-title">
+            </div>
+            <div class="login-form">
+                <div class="control-group">
+                    <input class="login-field" name="username" placeholder="username" type="text" value="">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+                <div class="control-group">
+                    <input class="login-field" name="password" placeholder="password" type="password" value="">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+                <input style= "color:white" class="btn btn-primary btn-large btn-block" type="submit" value="Log in">
+            </div>
+        </div>
+    </div>
+</form>
+</body>

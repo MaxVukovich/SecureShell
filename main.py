@@ -56,6 +56,11 @@ def journal2_route():
 def music():
     return render_template("backgroundbeat.mp3")
 
+@app.route('/embedprojectplan/')
+def embed1():
+    return render_template("embedprojectplan.html")
+
+
 
 if __name__ == "__main__":
     # runs the application on the repl development server

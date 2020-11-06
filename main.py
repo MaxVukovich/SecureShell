@@ -46,11 +46,11 @@ def video():
 
 @app.route('/project/journal1')
 def journal1_route():
-    return render_template("task.html", data=data.journal1())
+    return render_template("definedata.html", data=data.journal1())
 
 @app.route('/project/journal2')
 def journal2_route():
-    return render_template("task.html", data=data.journal2())
+    return render_template("definedata.html", data=data.journal2())
 
 @app.route('/backgroundbeat/')
 def music():
@@ -59,6 +59,11 @@ def music():
 @app.route('/embedprojectplan/')
 def embed1():
     return render_template("embedprojectplan.html")
+
+
+@app.route('/embedjournals/')
+def embed2():
+    return render_template("embedjournals.html")
 
 
 

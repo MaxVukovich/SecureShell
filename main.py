@@ -9,6 +9,7 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
 import os
 #yurrrrrr
+#yolo
 # create a Flask instance
 app = Flask(__name__)
 
@@ -63,6 +64,11 @@ def embed1():
 @app.route('/embedjournals/')
 def embed2():
     return render_template("embedjournals.html")
+
+@app.route('/embedjournal2/')
+def embed3():
+    return render_template("embedjournal2.html")
+
 
 
 

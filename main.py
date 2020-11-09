@@ -61,14 +61,6 @@ def music():
 def embed1():
     return render_template("embedprojectplan.html")
 
-@app.route('/embedjournals/')
-def embed2():
-    return render_template("embedjournals.html")
-
-@app.route('/embedjournal2/')
-def embed3():
-    return render_template("embedjournal2.html")
-
 
 
 

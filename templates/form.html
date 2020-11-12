@@ -1,0 +1,73 @@
+{% extends "main template.html" %}
+
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="nametext">Name</h1>
+<input id="name" type="text" placeholder="Name"></input>
+<h1 id="categorytext">Category</h1>
+<input id="category" type="text" placeholder="Category"></input>
+<h1 id="descriptiontext">Description</h1>
+<input id="description" type="text" placeholder="Description"></input>
+</form>
+</body>
+<style>
+    #nametext{
+    position: relative;
+    padding:1%;
+    margin-top:1%;
+    text-align:center;
+
+    }
+    #categorytext{
+    position: relative;
+    padding:1%;
+    margin-top:1%;
+    text-align:center;
+
+    }
+    #descriptiontext{
+    position: relative;
+    padding:1%;
+    margin-top:1%;
+    text-align:center;
+
+    }
+    #name{
+    position: relative;
+    padding:1%;
+    padding-right:15%;
+    padding-left:15%;
+    margin-left:30%;
+    margin-bottom:1%;
+    margin-top:.5%;
+    text-align:center;
+    display:block;
+    }
+    #category{
+    position: relative;
+    padding:1%;
+    padding-right:15%;
+    padding-left:15%;
+    margin-left:30%;
+    margin-bottom:1%;
+    text-align:center;
+    display:block;
+    }
+    #description{
+    position: relative;
+    padding:10%;
+    padding-right:15%;
+    padding-left:15%;
+    margin-left:30%;
+    margin-bottom:1%;
+    text-align:left;
+    display:block;
+    }
+</style>
+</html>
+{% endblock %}

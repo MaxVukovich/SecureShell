@@ -50,3 +50,13 @@ IDE - IntelliJ Community Edition 2020.2.3
 Interpretor - Python 3.8
 ```
 
+## Map of project to AP CSP requirements
+[Computer Science Principlse Course Cpnten description pages 19, 20, 21](https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-course-and-exam-description.pdf?course=ap-computer-science-principles)
+
+| Unit | Percentage | Hello Series usage |
+| ------------- | ----------- | ----------- |
+|  Big Idea 1: Creative Computing | 10-13% | We began building a Web Site Portfolio with previous Team Projects and other Resources |
+|  Big Idea 2: Data | 17-22% | We defined and established data definitions in Python. We used "backend" Python data in "frontend" to be rendered in via HTML. |
+|  Big Idea 3: Algorithms and Programming | 30-35% | We defined Python dictionaries, organized data, and processed data on seperate HTML pages.  We learned HTML makrup, Jinja templates, Jinja variables, CCS and Bootstrap formatting, and Python data |
+|  Big Idea 4: Computer Systems and Network | 11-15% | We Self Hosted our Web server on a Raspberry Pi so we could learn about system processes and network protocols (HTTP).  We learned how a web server responds to GET and POST HTTP events.  |
+|  Big Idea 5: Impact of Computing | 21-26% |  We learned how a Web Server can provide an area to share information and enable people to place information for personal and group output. |

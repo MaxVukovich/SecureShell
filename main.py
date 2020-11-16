@@ -61,11 +61,20 @@ def music():
 def embed1():
     return render_template("embedprojectplan.html")
 
-
-
-@app.route('/form')
+@app.route('/form', methods=['POST', 'GET'])
 def form():
     return render_template("form.html")
+    session['title'] =  request.form['title']
+    session['category'] =  request.form['category']
+    session['description'] =  request.form['description']
+
+@app.route('/showform', methods=['POST', 'GET'])
+def showform():
+    return render_template("showform.html")
+    session.get['title']
+    session.get['category']
+    session.get['descrription']
+    return render_template("showform.html")
 
 
 if __name__ == "__main__":

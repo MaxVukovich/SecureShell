@@ -7,15 +7,24 @@
     <title>Title</title>
 </head>
 <body>
-<h1 id="nametext">Name</h1>
-<input id="name" type="text" placeholder="Name"></input>
+<h1 id="nametext">Title</h1>
+<form action="/form" method="post">
+<input id="name" type="text" placeholder="Title"name="title"></input>
 <h1 id="categorytext">Category</h1>
-<input id="category" type="text" placeholder="Category"></input>
+<input id="category" type="text" placeholder="Category" name="category"></input>
 <h1 id="descriptiontext">Description</h1>
-<input id="description" type="text" placeholder="Description"></input>
+<input id="description" type="text" placeholder="Description" name="description"></input>
+<input type="submit" id="submit"></input>
 </form>
 </body>
 <style>
+    #submit{
+    position: relative;
+    padding:1%;
+    margin-top:1%;
+    text-align:center;
+    margin-left:47%;
+   }
     #nametext{
     position: relative;
     padding:1%;

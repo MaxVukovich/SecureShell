@@ -6,7 +6,7 @@
 #Max Vukovich
 #test
 # https://flask.palletsprojects.com/en/1.1.x/api/
-from flask import Flask, flash, redirect, render_template, request, session, abort
+from flask import Flask, flash, redirect, render_template, request, session, abort, jsonify
 import os
 #yurrrrrr
 #yolo
@@ -63,18 +63,23 @@ def embed1():
 
 @app.route('/form', methods=['POST', 'GET'])
 def form():
-    return render_template("form.html")
-    session['title'] =  request.form['title']
-    session['category'] =  request.form['category']
-    session['description'] =  request.form['description']
+    if request.method == 'GET':
+        return render_template("form.html")
+    elif request.method == 'POST':
+        if request.form.get('title') != '' and request.form.get('category') != ''  and request.form.get('description') != '' :
+            title = request.form.get('title')
+            category = request.form.get('category')
+            description = request.form.get('description')
+            return redirect("/showform?title=" + str(title) +"&category=" + str(category) + "&description=" + str(description), code=302)
+        else:
+            return render_template("form.html")
 
 @app.route('/showform', methods=['POST', 'GET'])
 def showform():
-    return render_template("showform.html")
-    session.get['title']
-    session.get['category']
-    session.get['descrription']
-    return render_template("showform.html")
+    title = request.args.get('title')
+    category = request.args.get('category')
+    description = request.args.get('description')
+    return render_template("showform.html", title=title , description=description , category=category)
 
 
 if __name__ == "__main__":

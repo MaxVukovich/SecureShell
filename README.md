@@ -25,22 +25,22 @@
 # Website Layout
 ## Home
 ```
-Home (Shows proficiency in animation integration and script tags)
-- Allows you to access the home page housing the animation
+Home (Shows proficiency in animation integration and script tags).
+- Allows you to access the home page housing the animation.
 ```
 ## SSH Shell Login
 ```
-SSH Shell Login (Shows proficiency in href and linking as well as drop down menu creation)
-- Drop down menu containing important links such as repl, project plan, and project journals
+SSH Shell Login (Shows proficiency in href and linking as well as drop down menu creation).
+- Drop down menu containing important links such as repl, project plan, and project journals.
 ```
 ## Flask Series Project
 ```
-Flask Series Project (Shows proficiency in href and linking as well as drop down menu creation)
-- Drop down menu containing important links such as repl, project plan, and project journals
+Flask Series Project (Shows proficiency in href and linking as well as drop down menu creation).
+- Drop down menu containing important links such as repl, project plan, and project journals.
 ```
 ## SSH Login Embed
 ```
-SSH Login Embed (Shows proficiency in embedding)
+SSH Login Embed (Shows proficiency in embedding).
 - Repl embedded console. Allows access to our prior ssh shell project. 
 ```
 

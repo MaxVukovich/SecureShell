@@ -53,10 +53,6 @@ def journal1_route():
 def journal2_route():
     return render_template("definedata.html", data=data.journal2())
 
-@app.route('/backgroundbeat/')
-def music():
-    return render_template("backgroundbeat.mp3")
-
 @app.route('/embedprojectplan/')
 def embed1():
     return render_template("embedprojectplan.html")

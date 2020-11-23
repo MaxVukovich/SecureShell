@@ -44,6 +44,17 @@ SSH Login Embed (Shows proficiency in embedding).
 - Repl embedded console. Allows access to our prior ssh shell project. 
 ```
 
+## Other Embeds
+```
+Individual Mastery Youtube Videos (proficiency in video embeds)
+Project Portfolio document embeded (proficiency in documentation embeds)
+```
+## Forum Section
+```
+A forum page which allows the user to input a post about information and send it to the server.
+Allows user to view the post after delivery.
+```
+
 # Project Info
 ```
 IDE - IntelliJ Community Edition 2020.2.3

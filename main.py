@@ -62,11 +62,11 @@ def form():
     if request.method == 'GET':
         return render_template("form.html")
     elif request.method == 'POST':
-        if request.form.get('title') != '' and request.form.get('category') != ''  and request.form.get('description') != '' :
+        if request.form.get('title') != '' and request.form.get('category') != '' and request.form.get('description') != '' :
             title = request.form.get('title')
             category = request.form.get('category')
             description = request.form.get('description')
-            return redirect("/showform?title=" + str(title) +"&category=" + str(category) + "&description=" + str(description), code=302)
+            return redirect("/showform?title=" + str(title) +"&category=" + str(category) + "&description=" + str(description) + "&video=" + str(video), code=302)
         else:
             return render_template("form.html")
 
